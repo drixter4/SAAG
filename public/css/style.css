@@ -2925,7 +2925,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   position: fixed;
   right: 20px;
   z-index: 111;
-  top: 50%;
+  top: 75%;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   opacity: 0;
@@ -19327,4 +19327,10 @@ footer .footer-navbar .nav-item:last-child a {
 }
 .footer-demo img {
   max-height: 55px !important;
+}
+
+
+.contact-cards{
+  z-index: 51 !important;
+  position: relative !important;
 }

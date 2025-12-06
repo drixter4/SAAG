@@ -1,33 +1,30 @@
-import { useNavigate } from "react-router-dom";
 import './navbar.css'
-export default function Navbar() {
+export default function Navbar({ transparent = true }) {
 
+  const headerClass = transparent
+    ? "navbar navbar-expand-lg header-transparent bg-transparent header-reverse"
+    : "navbar navbar-expand-lg bg-white header-normal"
   return (
     <header>
-      <nav className="navbar navbar-expand-lg header-transparent bg-transparent header-reverse" data-header-hover="light">
+      <nav className={headerClass} data-header-hover="light">
         <div className="container-fluid">
           <div className="col-auto col-xxl-3 col-lg-2 me-lg-0 me-auto">
-            <a className="navbar-brand" href="demo-business.html">
+            <a className="navbar-brand" href="#">
               <img
-                src="images/SAAG/SAAG-LOGO-blanco.png"
-                data-at2x="images/SAAG/SAAG-LOGO-blanco.png"
-                alt=""
-                style={{ scale: 1.5 }}
+                src={transparent ? "images/SAAG/SAAG-LOGO-blanco.png": "images/SAAG/SAAG-LOGO-negro.webp"}
                 className="default-logo"
-              />
-              <img
-                src="images/SAAG/SAAG-LOGO-negro.webp"
-                data-at2x="images/SAAG/SAAG-LOGO-negro.webp"
-                alt=""
                 style={{ scale: 1.5 }}
-                className="alt-logo"
               />
               <img
                 src="images/SAAG/SAAG-LOGO-negro.webp"
-                data-at2x="images/SAAG/SAAG-LOGO-negro.webp"
-                alt=""
+                className="alt-logo"
+                style={{ scale: 1.5 }}
+              />
+              <img
+                src="images/SAAG/SAAG-LOGO-negro.webp"
                 className="mobile-logo"
               />
+
             </a>
           </div>
           <div className="col-auto menu-order position-static">
@@ -107,7 +104,7 @@ export default function Navbar() {
                   <a href="demo-business-blog.html" className="nav-link">Blog</a>
                 </li>
                 <li className="nav-item">
-                  <a href="demo-business-contact.html" className="nav-link">Contact</a>
+                  <a href="/contacto" className="nav-link">Contact</a>
                 </li>
               </ul>
             </div>

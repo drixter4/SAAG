@@ -49,3 +49,17 @@
     height: auto;
   }
   
+  @media (max-width: 768px) {
+    .loader-logo {
+      width: 45vw;     /* más grande */
+    }
+  
+    .cars {
+      width: 40vw;
+    }
+  
+    .car-img {
+      width: 22vw;
+    }
+  }
+  

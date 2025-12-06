@@ -27,14 +27,13 @@ export default function Loader() {
         alt="Cargando..."
         className="loader-logo"
       />
-
-      <marquee scrollamount="28" className="cars">
-        <img
-          src="/images/SAAG/car.png"
-          alt="Carro animado"
-          className="car-img"
-        />
+      <marquee
+        scrollamount={window.innerWidth < 768 ? 10 : 28}
+        className="cars"
+      >
+        <img src="/images/SAAG/car.png" alt="Carro animado" className="car-img" />
       </marquee>
+
     </section>
   );
 }

@@ -12,7 +12,7 @@ export default function Header() {
             <div
               className="cover-background position-absolute top-0 start-0 banner-size"
               data-swiper-parallax="500"
-              style={{ backgroundImage: "url('https://placehold.co/1921x938')" }}
+              style={{ backgroundImage: "url('/images/SAAG/SLX_1921.jpg')" }}
             >
               <div className="opacity-light bg-gradient-sherpa-blue-black"></div>
 

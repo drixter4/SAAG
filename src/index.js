@@ -18,6 +18,8 @@ const Root = () => {
     loadCSS('/css/style.css');
     loadCSS('/css/responsive.css');
     loadCSS('/demos/business/business.css');
+
+    
     // loadCSS('/css/formaviable.css')
     // Cargar scripts
     const loadScript = (src) => {
