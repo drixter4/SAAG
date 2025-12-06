@@ -3,7 +3,7 @@ export default function Navbar({ transparent = true }) {
 
   const headerClass = transparent
     ? "navbar navbar-expand-lg header-transparent bg-transparent header-reverse"
-    : "navbar navbar-expand-lg bg-white header-normal"
+    : "navbar navbar-expand-lg bg-white header-normal header-reverse"
   return (
     <header>
       <nav className={headerClass} data-header-hover="light">

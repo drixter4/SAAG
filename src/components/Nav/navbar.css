@@ -53,18 +53,7 @@
   background-color: transparent !important;
 }
 
-.header-transparent .nav-link,
-.header-transparent .widget-text,
-.header-transparent .feather,
-.header-transparent .fa-solid {
-  color: #fff !important;
-}
 
-/* MODO FONDO BLANCO */
-.header-normal {
-  background-color: #fff !important;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
 
 .header-normal .nav-link,
 .header-normal .widget-text,
