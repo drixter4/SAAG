@@ -9,7 +9,7 @@ export default function AppRouter() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/contacto" element={<Contact transparent={false}/>} />
+      <Route path="/contacto" element={<Contact />} />
 
     </Routes>
   );
