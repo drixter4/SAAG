@@ -44,7 +44,7 @@ export default function Navbar({ transparent = true }) {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav alt-font">
                 <li className="nav-item">
-                  <a href="demo-business.html" className="nav-link">Inicio</a>
+                  <a href="/" className="nav-link">Inicio</a>
                 </li>
                 {/* <li className="nav-item">
                   <a href="demo-business-about.html" className="nav-link">About</a>
