@@ -11,7 +11,7 @@ export default function Navbar({ transparent = true }) {
           <div className="col-auto col-xxl-3 col-lg-2 me-lg-0 me-auto">
             <a className="navbar-brand" href="#">
               <img
-                src={transparent ? "images/SAAG/SAAG-LOGO-blanco.png": "images/SAAG/SAAG-LOGO-negro.webp"}
+                src={transparent ? "images/SAAG/SAAG-LOGO-blanco.png" : "images/SAAG/SAAG-LOGO-negro.webp"}
                 className="default-logo"
                 style={{ scale: 1.5 }}
               />
@@ -94,18 +94,36 @@ export default function Navbar({ transparent = true }) {
 
                   </ul>
                 </li>
+                <li class="nav-item dropdown dropdown-with-icon-style02">
+                  <a
+                    href="#"
+                    class="nav-link "
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Postventa 
+                  </a>
+
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a href="/garantia"> Garantia</a></li>
+                    <li><a href="/mantenimiento"> Mantenimiento</a></li>
+                    <li><a href="/seguro">Seguros</a></li>
+                  </ul>
+                </li>
+                
+
                 <li className="nav-item">
-                  <a href="demo-business-clients.html" className="nav-link">Clients</a>
+                  <a href="#" className="nav-link">Accesorios</a>
                 </li>
                 <li className="nav-item">
-                  <a href="demo-business-pricing.html" className="nav-link">Pricing</a>
+                  <a href="#" className="nav-link">Distribuidores</a>
                 </li>
                 <li className="nav-item">
-                  <a href="demo-business-blog.html" className="nav-link">Blog</a>
+                  <a href="/contacto" className="nav-link">Contacto</a>
                 </li>
-                <li className="nav-item">
-                  <a href="/contacto" className="nav-link">Contact</a>
-                </li>
+
               </ul>
             </div>
           </div>

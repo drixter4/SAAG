@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
 
 const services = [
     {
@@ -13,16 +11,17 @@ const services = [
         icon: "line-icon-Shield",
         ruta: "/garantia"
     },
-    {
-        id: 2,
-        title: "Mantenimiento",
-        badge: "Servicio técnico",
-        description:
-            "Mantenimiento preventivo y correctivo realizado por técnicos certificados, revisiones completas del sistema y ajustes necesarios para asegurar el rendimiento y prolongar la vida útil del vehículo.",
-        image: "https://placehold.co/768x768",
-        icon: "line-icon-Gears",
-        ruta: "/mantenimiento"
-    },
+
+    // {
+    //   id: 2,
+    //   title: "Mantenimiento",
+    //   badge: "Servicio técnico",
+    //   description:
+    //     "Mantenimiento preventivo y correctivo realizado por técnicos certificados, revisiones completas del sistema y ajustes necesarios para asegurar el rendimiento y prolongar la vida útil del vehículo.",
+    //   image: "https://placehold.co/768x768",
+    //   icon: "line-icon-Gears",
+    //   ruta: "/mantenimiento"
+    // },
     {
         id: 3,
         title: "Seguros",
@@ -33,17 +32,19 @@ const services = [
         icon: "line-icon-Heart",
         ruta: "/seguro"
     },
-    {
-        id: 4,
-        title: "Distribuidores",
-        badge: "Red autorizada",
-        description:
-            "Red de distribuidores autorizados con repuestos originales, asesoría especializada y soporte postventa garantizado para mantener tu vehículo siempre en óptimas condiciones.",
-        image: "https://placehold.co/768x768",
-        icon: "line-icon-Handshake",
-        ruta: "/distribuidores"
-    }
+    // {
+    //   id: 4,
+    //   title: "Distribuidores",
+    //   badge: "Red autorizada",
+    //   description:
+    //     "Red de distribuidores autorizados con repuestos originales, asesoría especializada y soporte postventa garantizado para mantener tu vehículo siempre en óptimas condiciones.",
+    //   image: "https://placehold.co/768x768",
+    //   icon: "line-icon-Handshake",
+    //   ruta: "/distribuidores"
+    // }
 ];
+
+
 
 export default function Services() {
     return (
@@ -55,7 +56,7 @@ export default function Services() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 last-paragraph-no-margin">
-                        <h2 className="text-white fw-600 ls-minus-1px mb-20px text-center">Postventa</h2>
+                        <h2 className="text-white fw-600 ls-minus-1px mb-20px text-center">Nuestros servicios</h2>
                         <h6 class="text-white-50 w-100 sm-w-100 text-center mb-3">Descubre los beneficios que ofrecen nuestros servicios.</h6>
 
                     </div>
@@ -88,11 +89,11 @@ export default function Services() {
                                         <div className="col-md-6 text-center">
                                             <a href={service.ruta}>
                                                 <img
-                                                   
+                                                
                                                     src={service.image}
                                                     alt={service.title}
                                                     className="img-fluid"
-                                                    style={{ width: "100%", maxWidth: "400px", aspectRatio: "1 / 1", objectFit: "cover", cursor: 'pointer' }}
+                                                    style={{ width: "100%", maxWidth: "400px", aspectRatio: "1 / 1", objectFit: "cover", cursor: 'pointer'}}
                                                 />
                                             </a>
                                         </div>
@@ -106,7 +107,6 @@ export default function Services() {
                                             </div>
                                             <h3 className=" fw-700 text-white">{service.title}</h3>
                                             <p className="text-white">{service.description}</p>
-
                                         </div>
                                     </div>
                                 </div>

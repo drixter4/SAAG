@@ -2141,6 +2141,10 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 .full-screen.top-space-margin {
   height: calc(100vh - 96px);
 }
+.media-screen{
+  height: 70vh;
+
+}
 /* Video icons */
 @-webkit-keyframes video-icon-sonar {
   0% {
@@ -3456,6 +3460,17 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   position: relative;
   background-position: center center !important;
 }
+.cover-background2{
+     background-position: bottom center;
+     background-size: cover;
+     position: relative;
+}
+.cover-background3{
+  background-position: bottom end;
+  background-size: cover;
+  position: relative;
+}
+
 .fix-background {
   position: relative;
   background-size: cover !important;
@@ -10384,7 +10399,7 @@ blockquote footer {
   color: var(--base-color);
 }
 .btn.btn-dark-gray {
-  background-color: #8B9466;
+  background-color: var(--black);
   color: var(--white);
 }
 .btn.btn-dark-gray:hover, .btn.btn-dark-gray:active {
@@ -10392,6 +10407,16 @@ blockquote footer {
   border-color: var(--dark-gray);
   color: var(--dark-gray);
 }
+.btn.btn-dark-red {
+  background-color: var(--red);
+  color: var(--white);
+}
+.btn.btn-dark-red:hover, .btn.btn-dark-red:active {
+  background-color: transparent;
+  border-color: var(--dark-gray);
+  color: var(--dark-gray);
+}
+
 .btn.btn-black {
   background-color: var(--black);
   color: var(--white);

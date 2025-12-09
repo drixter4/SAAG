@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function Footer({ contact = true }) {
 
     return (
         <>
@@ -6,24 +6,28 @@ export default function Footer() {
                 className="bg-dark-gray background-position-center-top"
                 style={{ backgroundImage: "url('images/demo-decor-store-footer-bg.jpg')" }}
             >
-                <div className="container overlap-section">
-                    <div className="row g-0  justify-content-center align-items-center bg-base-color border-radius-6px ps-7 pe-7 pt-4 pb-4 lg-p-30px sm-p-20px mb-7 contact-cardsz">
-                        <div className="col-lg-6 col-md-9 text-center text-lg-start md-mb-20px">
-                            <h4 className="text-white fw-600 mb-0 ls-minus-1px">¡Hablemos sobre cómo podemos ayudarte a comprar el auto ideal!</h4>
-                        </div>
-                        <div className="col-auto col-lg-5 icon-with-text-style-08 offset-lg-1">
-                            <div className="feature-box feature-box-left-icon-middle overflow-hidden">
-                                <div className="feature-box-icon feature-box-icon-rounded w-80px h-80px rounded-circle bg-dark-gray-transparent-light me-25px lg-me-20px">
-                                    <i className="bi bi-envelope icon-very-medium text-white"></i>
-                                </div>
-                                <div className="feature-box-content last-paragraph-no-margin">
-                                    <span className="text-white fs-18 lh-22 mb-5px d-block">¿Te interesa cotizar tu carro ideal? ¡Estoy para ayudarte!</span>
-                                    <h6 className="d-inline-block fw-600 mb-0"><a href="mailto:info@saag.mx" className="text-dark-gray text-decoration-line-bottom-medium text-white-hover">info@saag.mx</a></h6>
+
+                {
+                    contact &&
+                    <div className="container overlap-section">
+                        <div className="row g-0  justify-content-center align-items-center bg-base-color border-radius-6px ps-7 pe-7 pt-4 pb-4 lg-p-30px sm-p-20px mb-7 contact-cardsz">
+                            <div className="col-lg-6 col-md-9 text-center text-lg-start md-mb-20px">
+                                <h4 className="text-white fw-600 mb-0 ls-minus-1px">¡Hablemos sobre cómo podemos ayudarte a comprar el auto ideal!</h4>
+                            </div>
+                            <div className="col-auto col-lg-5 icon-with-text-style-08 offset-lg-1">
+                                <div className="feature-box feature-box-left-icon-middle overflow-hidden">
+                                    <div className="feature-box-icon feature-box-icon-rounded w-80px h-80px rounded-circle bg-dark-gray-transparent-light me-25px lg-me-20px">
+                                        <i className="bi bi-envelope icon-very-medium text-white"></i>
+                                    </div>
+                                    <div className="feature-box-content last-paragraph-no-margin">
+                                        <span className="text-white fs-18 lh-22 mb-5px d-block">¿Te interesa cotizar tu carro ideal? ¡Estoy para ayudarte!</span>
+                                        <h6 className="d-inline-block fw-600 mb-0"><a href="mailto:info@saag.mx" className="text-dark-gray text-decoration-line-bottom-medium text-white-hover">info@saag.mx</a></h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                }
                 <div className="container footer-dark text-center text-sm-start">
                     <div className="row mb-5 sm-mb-30px">
 
@@ -105,7 +109,7 @@ export default function Footer() {
                             </p>
                         </div>
 
-                     
+
 
 
                     </div>
@@ -125,7 +129,23 @@ export default function Footer() {
                         <div className="col-lg-4 last-paragraph-no-margin text-center text-lg-end">
                             <p className="fs-15">&copy; Copyright © 2025 saag.mx – Creado por
                             </p>
-                            <a href="https://codeglider.com.mx/" target="_blank" className="text-white text-decoration-line-bottom">CodeGlider - AresCode</a>
+                            <span className="text-white">
+                                <a
+                                    href="https://codeglider.com.mx/"
+                                    target="_blank"
+                                    className="text-white text-decoration-line-bottom"
+                                >
+                                    CodeGlider
+                                </a>
+                                {" "}–{" "}
+                                <a
+                                    href="https://arescode.com.mx/"
+                                    target="_blank"
+                                    className="text-white text-decoration-line-bottom"
+                                >
+                                    AresCode
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </div>

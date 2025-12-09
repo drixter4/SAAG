@@ -5,19 +5,7 @@ import { App } from './App';
 const Root = () => {
   React.useEffect(() => {
     // Cargar CSS dinámicamente desde public/
-    const loadCSS = (href) => {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.href = href;
-      document.head.appendChild(link);
-    };
 
-    // Cargar todos los CSS
-    loadCSS('/css/vendors.min.css');
-    loadCSS('/css/icon.min.css');
-    loadCSS('/css/style.css');
-    loadCSS('/css/responsive.css');
-    loadCSS('/demos/business/business.css');
 
     
     // loadCSS('/css/formaviable.css')

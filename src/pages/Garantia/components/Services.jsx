@@ -1,18 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
 
 const services = [
-    {
-        id: 1,
-        title: "Garantía",
-        badge: "Garantía oficial",
-        description:
-            "Garantía oficial SAAG con cobertura en componentes esenciales, diagnósticos certificados y uso exclusivo de refacciones originales. Pensada para mantener tu vehículo protegido y operando como nuevo.",
-        image: "https://placehold.co/768x768",
-        icon: "line-icon-Shield",
-        ruta: "/garantia"
-    },
+
     {
         id: 2,
         title: "Mantenimiento",
@@ -32,18 +21,10 @@ const services = [
         image: "https://placehold.co/768x768",
         icon: "line-icon-Heart",
         ruta: "/seguro"
-    },
-    {
-        id: 4,
-        title: "Distribuidores",
-        badge: "Red autorizada",
-        description:
-            "Red de distribuidores autorizados con repuestos originales, asesoría especializada y soporte postventa garantizado para mantener tu vehículo siempre en óptimas condiciones.",
-        image: "https://placehold.co/768x768",
-        icon: "line-icon-Handshake",
-        ruta: "/distribuidores"
     }
 ];
+
+
 
 export default function Services() {
     return (
@@ -55,7 +36,7 @@ export default function Services() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 last-paragraph-no-margin">
-                        <h2 className="text-white fw-600 ls-minus-1px mb-20px text-center">Postventa</h2>
+                        <h2 className="text-white fw-600 ls-minus-1px mb-20px text-center">Nuestros servicios</h2>
                         <h6 class="text-white-50 w-100 sm-w-100 text-center mb-3">Descubre los beneficios que ofrecen nuestros servicios.</h6>
 
                     </div>
@@ -88,7 +69,7 @@ export default function Services() {
                                         <div className="col-md-6 text-center">
                                             <a href={service.ruta}>
                                                 <img
-                                                   
+
                                                     src={service.image}
                                                     alt={service.title}
                                                     className="img-fluid"
@@ -106,7 +87,6 @@ export default function Services() {
                                             </div>
                                             <h3 className=" fw-700 text-white">{service.title}</h3>
                                             <p className="text-white">{service.description}</p>
-
                                         </div>
                                     </div>
                                 </div>

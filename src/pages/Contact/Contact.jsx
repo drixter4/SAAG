@@ -9,7 +9,7 @@ export const Contact = () => {
             <Navbar transparent={false} />  
             <Header />
             <ContactFormSection/>
-            <Footer />
+            <Footer contact={false}/>
 
         </>
     );
