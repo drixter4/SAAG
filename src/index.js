@@ -27,7 +27,7 @@ const Root = () => {
         await loadScript('/js/vendors.min.js');
         await loadScript('/js/main.js');
         await loadScript('https://cdn.jsdelivr.net/npm/sweetalert2@11') 
-        // await loadScript('/js/hotel/getRoomsAviable.js')
+        await loadScript('https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&libraries=marker"')
            } catch (error) {
         console.error('Error loading scripts:', error);
       }

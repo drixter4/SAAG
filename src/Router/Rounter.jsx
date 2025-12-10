@@ -5,6 +5,7 @@ import Garantia from "../pages/Garantia/Garantia";
 import Mantenimiento from "../pages/Mantenimiento/Mantenimiento";
 import ScrollToTop from "../components/ScrollTop/ScrollTop";
 import Seguro from "../pages/Seguro/Seguro";
+import Distribuidores from "../pages/Distribuidores/Seguro";
 
 // import { Contact } from "../pages/Contact";
 
@@ -21,7 +22,9 @@ export default function AppRouter() {
         <Route path="/mantenimiento" element={<Mantenimiento />} />
         
         <Route path="/seguro" element={<Seguro />} />
+        <Route path="/distribuidores" element={<Distribuidores />} />
 
+        
       </Routes>
     </>
   );

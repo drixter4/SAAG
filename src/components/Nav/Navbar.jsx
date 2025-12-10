@@ -115,10 +115,10 @@ export default function Navbar({ transparent = true }) {
                 
 
                 <li className="nav-item">
-                  <a href="#" className="nav-link">Accesorios</a>
+                  <a href="/accesorios" className="nav-link">Accesorios</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#" className="nav-link">Distribuidores</a>
+                  <a href="/distribuidores" className="nav-link">Distribuidores</a>
                 </li>
                 <li className="nav-item">
                   <a href="/contacto" className="nav-link">Contacto</a>
@@ -134,7 +134,7 @@ export default function Navbar({ transparent = true }) {
                   <span className="w-35px h-35px bg-base-color d-inline-block lh-36 me-10px border-radius-100px">
                     <i className="feather icon-feather-phone me-10px"></i>
                   </span>
-                  <a href="tel:1800222000" className="widget-text text-white-hover">1 800 222 000</a>
+                  <a href="tel:8000570137" className="widget-text text-white-hover">800 057 0137</a>
                 </div>
               </div>
               {/* <div className="header-button">

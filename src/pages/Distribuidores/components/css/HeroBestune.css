@@ -1,0 +1,71 @@
+.hero-section {
+    position: relative;
+    background: #f4f4f4;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .hero-logo {
+    width: 15vw;
+    margin-bottom: 30px;
+  }
+  
+  /* Titulo */
+  .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+  }
+  
+  /* Texto */
+  .hero-description {
+    font-size: 18px;
+    color: #333;
+    max-width: 460px;
+    margin-bottom: 35px;
+  }
+  
+
+  /* Botón */
+  .hero-button {
+    border-radius: 30px;
+    padding: 14px 32px;
+    font-size: 18px;
+  }
+  
+  /* Auto */
+  .hero-car {
+    max-width: 100%;
+    transition: 0.6s cubic-bezier(.2,.75,.35,1);
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.7));
+  }
+  
+  .hero-car:hover {
+    transform: scale(1.03) translateY(-6px);
+  }
+  
+
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .hero-title {
+      font-size: 36px;
+    }
+    .hero-description {
+      font-size: 16px;
+    }
+    .search-box input {
+      font-size: 16px;
+    }
+  }
+  
+  .container-hero{
+    width: 80%;
+
+  }
