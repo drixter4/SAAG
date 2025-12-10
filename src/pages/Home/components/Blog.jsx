@@ -1,7 +1,7 @@
 export default function Blog() {
     return (
         <section>
-            <div className="container overlap-gap-section">
+            <div className="container overlap-gap-section pb-3">
                 <div className=" justify-content-center align-items-center mb-6" data-anime='{ "el": "childs", "translateY": [30, 1], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue":200, "easing": "easeOutQuad" }'>
 
                     <div className="col-12 col-md-auto ps-25px sm-ps-15px text-center">

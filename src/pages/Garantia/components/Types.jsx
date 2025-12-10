@@ -24,7 +24,7 @@ export default function Types() {
     }
 
     return (
-        <section className="big-section overflow-hidden bg-gradient-top-very-light-gray">
+        <section className=" overflow-hidden bg-gradient-top-very-light-gray">
             <div className="">
                 <div className="row align-items-center mb-6">
                     <div className="col-md-12 last-paragraph-no-margin">

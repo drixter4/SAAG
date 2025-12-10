@@ -4,7 +4,7 @@ import "./ContactFormSection.css";
 export default function ContactFormSection() {
   return (
     <>
-      <div className="contedor">
+      <div className="contedor py-5">
         <div className="row justify-content-center">
           {/* ESPACIO LATERAL EN DESKTOP */}
           <div className="d-none d-lg-block col-lg-2"></div>

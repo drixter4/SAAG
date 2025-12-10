@@ -1,6 +1,7 @@
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Nav/Navbar";
 import Header from "./components/Header";
+import HeroBestune from "./components/HeroBestune";
 import Services from "./components/Services";
 import Types from "./components/Types";
 
