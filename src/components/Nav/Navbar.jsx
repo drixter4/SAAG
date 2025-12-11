@@ -46,9 +46,7 @@ export default function Navbar({ transparent = true }) {
                 <li className="nav-item">
                   <a href="/" className="nav-link">Inicio</a>
                 </li>
-                {/* <li className="nav-item">
-                  <a href="demo-business-about.html" className="nav-link">About</a>
-                </li> */}
+               
                 <li className="nav-item dropdown dropdown-with-icon-style02">
                   <a href="#" className="nav-link">Nuestras Marcas</a>
                   <i
@@ -94,17 +92,15 @@ export default function Navbar({ transparent = true }) {
 
                   </ul>
                 </li>
-                <li class="nav-item dropdown dropdown-with-icon-style02">
-                  <a
-                    href="#"
-                    class="nav-link "
+                <li className="nav-item dropdown dropdown-with-icon-style02">
+                <a href="#" className="nav-link">Postventa</a>
+                <i
+                    className="fa-solid fa-angle-down dropdown-toggle"
                     id="navbarDropdownMenuLink"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
-                  >
-                    Postventa 
-                  </a>
+                  ></i>
 
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <li><a href="/garantia"> Garantia</a></li>
@@ -123,12 +119,15 @@ export default function Navbar({ transparent = true }) {
                 <li className="nav-item">
                   <a href="/contacto" className="nav-link">Contacto</a>
                 </li>
-
+                <li className="nav-item">
+                  <a href="/asistencia" className="nav-link">Linea 800</a>
+                </li>
+                
               </ul>
             </div>
           </div>
-          <div className="col-auto col-xxl-3 col-lg-2 text-end d-none d-sm-flex">
-            <div className="header-icon">
+          <div className="col-auto col-xxl-3 col-lg-2 text-end d-none d-sm-flex" >
+            <div className="header-icon me-4">
               <div className="d-none d-xxl-inline-block me-25px xxl-me-10px">
                 <div className="alt-font fs-15 xl-fs-13 widget-text fw-500">
                   <span className="w-35px h-35px bg-base-color d-inline-block lh-36 me-10px border-radius-100px">

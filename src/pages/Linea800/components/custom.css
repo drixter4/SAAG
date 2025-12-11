@@ -1,0 +1,77 @@
+.banner-size {
+    width: 100vw;
+    aspect-ratio: 2.046908316;
+}
+.button-size{
+    width: 90% !important;
+}
+
+.brand-content {
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.brand-content.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.brand-content.hidden {
+    opacity: 0;
+}
+
+/* Animación desde la derecha */
+.brand-content.hidden.right {
+    transform: translateX(100px);
+}
+
+.brand-content.visible.right {
+    transform: translateX(0);
+}
+
+/* Animación desde la izquierda */
+.brand-content.hidden.left {
+    transform: translateX(-100px);
+}
+
+.brand-content.visible.left {
+    transform: translateX(0);
+}
+
+/* Animación desde arriba */
+.brand-content.hidden.top {
+    transform: translateY(-100px);
+}
+
+.brand-content.visible.top {
+    transform: translateY(0);
+}
+
+/* Animación desde abajo */
+.brand-content.hidden.bottom {
+    transform: translateY(100px);
+}
+
+.brand-content.visible.bottom {
+    transform: translateY(0);
+}
+
+.btn.active {
+    font-weight: bold;
+}
+
+.model-car{
+    font-weight: 700 ;
+    color: #ff2c0b;
+}
+
+.bg-sliding-line2 {
+    background-color: var(--base-red); /* tu rojo base */
+    background-image: repeating-linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.08) 0px,
+        rgba(0, 0, 0, 0.08) 2px,
+        transparent 2px,
+        transparent 8px
+    );
+}
