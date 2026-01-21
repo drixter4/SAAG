@@ -64,3 +64,36 @@
     font-weight: 700 ;
     color: #ff2c0b;
 }
+
+
+/* Flechas del Swiper en negro */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000 !important;
+}
+
+/* Opcional: al hacer hover */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #222 !important;
+}
+
+/* ===== Swiper dots ===== */
+.swiper-pagination {
+  bottom: 20px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  opacity: 0.4;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #000;
+  transform: scale(1.2);
+}

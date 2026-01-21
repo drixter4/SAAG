@@ -8,7 +8,7 @@ const services = [
         badge: "Servicio técnico",
         description:
             "Mantenimiento preventivo y correctivo realizado por técnicos certificados, revisiones completas del sistema y ajustes necesarios para asegurar el rendimiento y prolongar la vida útil del vehículo.",
-        image: "https://placehold.co/768x768",
+        image: "https://saag.mx/wp-content/uploads/2024/07/SAAG-BESTUNE-MANTENIMIENTO.jpg",
         icon: "line-icon-Gears",
         ruta: "/mantenimiento"
     },
@@ -18,7 +18,7 @@ const services = [
         badge: "Protección total",
         description:
             "Planes de seguro flexibles con asistencia vial, cobertura ante robos, daños y siniestros, además de acompañamiento en trámites para una gestión rápida y sin complicaciones.",
-        image: "https://placehold.co/768x768",
+        image: "https://saag.mx/wp-content/uploads/2024/07/SAAG-BESTUNE-SEGUROS.jpg",
         icon: "line-icon-Heart",
         ruta: "/seguro"
     }
