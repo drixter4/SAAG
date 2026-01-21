@@ -9,7 +9,7 @@ const services = [
         badge: "Garantía oficial",
         description:
             "Garantía oficial SAAG con cobertura en componentes esenciales, diagnósticos certificados y uso exclusivo de refacciones originales. Pensada para mantener tu vehículo protegido y operando como nuevo.",
-        image: "https://placehold.co/768x768",
+        image: "https://saag.mx/wp-content/uploads/2024/07/SAAG-BESTUNE-GARANTIA.jpg",
         icon: "line-icon-Shield",
         ruta: "/garantia"
     },
@@ -19,7 +19,7 @@ const services = [
         badge: "Servicio técnico",
         description:
             "Mantenimiento preventivo y correctivo realizado por técnicos certificados, revisiones completas del sistema y ajustes necesarios para asegurar el rendimiento y prolongar la vida útil del vehículo.",
-        image: "https://placehold.co/768x768",
+        image: "https://saag.mx/wp-content/uploads/2024/07/SAAG-BESTUNE-MANTENIMIENTO.jpg",
         icon: "line-icon-Gears",
         ruta: "/mantenimiento"
     },
@@ -29,7 +29,7 @@ const services = [
         badge: "Protección total",
         description:
             "Planes de seguro flexibles con asistencia vial, cobertura ante robos, daños y siniestros, además de acompañamiento en trámites para una gestión rápida y sin complicaciones.",
-        image: "https://placehold.co/768x768",
+        image: "https://saag.mx/wp-content/uploads/2024/07/SAAG-BESTUNE-SEGUROS.jpg",
         icon: "line-icon-Heart",
         ruta: "/seguro"
     },
@@ -39,7 +39,7 @@ const services = [
         badge: "Red autorizada",
         description:
             "Red de distribuidores autorizados con repuestos originales, asesoría especializada y soporte postventa garantizado para mantener tu vehículo siempre en óptimas condiciones.",
-        image: "https://placehold.co/768x768",
+        image: "https://saag.mx/wp-content/uploads/2024/07/SAAG-BESTUNE-JIM-DISTRIBUIDORES.jpg",
         icon: "line-icon-Handshake",
         ruta: "/distribuidores"
     }

@@ -7,7 +7,7 @@ const services = [
         badge: "Garantía oficial",
         description:
             "Garantía oficial SAAG con cobertura en componentes esenciales, diagnósticos certificados y uso exclusivo de refacciones originales. Pensada para mantener tu vehículo protegido y operando como nuevo.",
-        image: "https://placehold.co/768x768",
+        image: "https://saag.mx/wp-content/uploads/2024/07/SAAG-BESTUNE-GARANTIA.jpg",
         icon: "line-icon-Shield",
         ruta: "/garantia"
     },
@@ -28,7 +28,7 @@ const services = [
         badge: "Protección total",
         description:
             "Planes de seguro flexibles con asistencia vial, cobertura ante robos, daños y siniestros, además de acompañamiento en trámites para una gestión rápida y sin complicaciones.",
-        image: "https://placehold.co/768x768",
+        image: "https://saag.mx/wp-content/uploads/2024/07/SAAG-BESTUNE-SEGUROS.jpg",
         icon: "line-icon-Heart",
         ruta: "/seguro"
     },

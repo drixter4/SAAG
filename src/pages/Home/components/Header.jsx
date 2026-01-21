@@ -1,59 +1,72 @@
-import './css/custom.css'
+import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./css/custom.css";
+
 export default function Header() {
+  const [banners, setBanners] = useState([]);
+
+  useEffect(() => {
+    const API_URL = process.env.REACT_APP_API_URL;
+
+
+    console.log("URL", API_URL)
+    fetch(`${API_URL}/banners`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.status === "success") {
+          setBanners(data.data);
+        } else {
+          console.error("API returned error:", data);
+        }
+      })
+      .catch((err) => console.error("Error fetching banners:", err));
+  }, []);
+
+  // Solo para debug si quieres ver los banners cargados
+  useEffect(() => {
+    console.log("Banners cargados:", banners);
+  }, [banners]);
+
   return (
     <section className="section-dark p-0 bg-dark-gray">
-      <div
-        className="swiper lg-no-parallax banner-size ipad-top-space-margin swiper-light-pagination"
-        data-slider-options='{ "slidesPerView": 1, "loop": true, "parallax": true, "speed": 1000, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'
-      >
-        <div className="swiper-wrapper">
-          {/* Slide 1 */}
-          <div className="swiper-slide overflow-hidden">
-            <div
-              className="cover-background position-absolute top-0 start-0 banner-size"
-              data-swiper-parallax="500"
-              style={{ backgroundImage: "url('/images/SAAG/SLX_1921.jpg')" }}
-            >
-              <div className="opacity-light bg-gradient-sherpa-blue-black"></div>
-
-            </div>
-          </div>
-
-          {/* Slide 2 */}
-          <div className="swiper-slide overflow-hidden">
-            <div
-              className="cover-background position-absolute top-0 start-0 banner-size"
-              data-swiper-parallax="500"
-              style={{ backgroundImage: "url('https://placehold.co/1921x938')" }}
-            >
-              <div className="opacity-light bg-gradient-sherpa-blue-black"></div>
-
-            </div> 
-          </div>
-
-          {/* Slide 3 */}
-          <div className="swiper-slide overflow-hidden">
-            <div
-              className="cover-background position-absolute top-0 start-0 banner-size"
-              data-swiper-parallax="500"
-              style={{ backgroundImage: "url('https://placehold.co/1921x938')" }}
-            >
-              <div className="opacity-light bg-gradient-sherpa-blue-black"></div>
-
-            </div>
-          </div>
-        </div>
-
-        {/* Pagination and Navigation */}
-        <div className="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
-
-        {/* <div className="slider-one-slide-prev-1 icon-extra-large text-white swiper-button-prev slider-navigation-style-06 d-none d-sm-inline-block">
-          <i className="line-icon-Arrow-OutLeft"></i>
-        </div>
-        <div className="slider-one-slide-next-1 icon-extra-large text-white swiper-button-next slider-navigation-style-06 d-none d-sm-inline-block">
-          <i className="line-icon-Arrow-OutRight"></i>
-        </div> */}
-      </div>
+      {banners.length > 0 ? (
+        <Swiper
+          modules={[Pagination, Navigation, Autoplay]}
+          slidesPerView={1}
+          loop={true}
+          speed={1000}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          navigation={true}
+          className="banner-size"
+        >
+          {banners.map((banner) => (
+            <SwiperSlide key={banner.id}>
+              <div
+                className="cover-background position-absolute top-0 start-0 banner-size"
+                style={{
+                  backgroundImage: `url(${process.env.REACT_APP_API_URL.replace(
+                    "/api",
+                    "/storage"
+                  )}/${banner.image_path})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+              </div>
+               <div className="opacity-light bg-gradient-sherpa-blue-black"></div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        <p style={{ textAlign: "center", padding: "2rem", color: "#fff" }}>No hay banners disponibles</p>
+      )}
     </section>
   );
 }

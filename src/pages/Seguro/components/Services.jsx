@@ -1,28 +1,26 @@
 import React from "react";
 
 const services = [
-    {
+  {
         id: 1,
         title: "Garantía",
         badge: "Garantía oficial",
         description:
             "Garantía oficial SAAG con cobertura en componentes esenciales, diagnósticos certificados y uso exclusivo de refacciones originales. Pensada para mantener tu vehículo protegido y operando como nuevo.",
-        image: "https://placehold.co/768x768",
+        image: "https://saag.mx/wp-content/uploads/2024/07/SAAG-BESTUNE-GARANTIA.jpg",
         icon: "line-icon-Shield",
         ruta: "/garantia"
     },
-
     {
-      id: 2,
-      title: "Mantenimiento",
-      badge: "Servicio técnico",
-      description:
-        "Mantenimiento preventivo y correctivo realizado por técnicos certificados, revisiones completas del sistema y ajustes necesarios para asegurar el rendimiento y prolongar la vida útil del vehículo.",
-      image: "https://placehold.co/768x768",
-      icon: "line-icon-Gears",
-      ruta: "/mantenimiento"
+        id: 2,
+        title: "Mantenimiento",
+        badge: "Servicio técnico",
+        description:
+            "Mantenimiento preventivo y correctivo realizado por técnicos certificados, revisiones completas del sistema y ajustes necesarios para asegurar el rendimiento y prolongar la vida útil del vehículo.",
+        image: "https://saag.mx/wp-content/uploads/2024/07/SAAG-BESTUNE-MANTENIMIENTO.jpg",
+        icon: "line-icon-Gears",
+        ruta: "/mantenimiento"
     },
-  
 ];
 
 
