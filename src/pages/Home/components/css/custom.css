@@ -1,7 +1,15 @@
 .banner-size {
     width: 100vw;
     aspect-ratio: 2.046908316;
-}
+    margin-top: 7vw;
+  }
+  
+  @media (min-width: 768px) {
+    .banner-size {
+      margin-top: 0;
+    }
+  }
+  
 .button-size{
     width: 90% !important;
 }

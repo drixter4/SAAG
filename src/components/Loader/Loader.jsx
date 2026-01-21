@@ -23,7 +23,7 @@ export default function Loader() {
       <div className="overlay"></div>
 
       <img
-        src="/images/SAAG/SAAG-LOGO-blanco.png"
+        src="/images/SAAG/BESTUNE logo blanco.png"
         alt="Cargando..."
         className="loader-logo"
       />

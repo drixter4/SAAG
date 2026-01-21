@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { distribuidores } from "./data/distribuidores";
 
 export default function MapaDistribuidores() {
-  const [selected, setSelected] = useState("La Paz, Baja California Sur");
+  const [selected, setSelected] = useState("Puerto Vallarta, Jalisco");
   const data = distribuidores[selected];
 
   // URL dinámica con marcador
@@ -15,7 +15,7 @@ export default function MapaDistribuidores() {
         {/* Selector */}
         <div className="row justify-content-center mb-4">
           <div className="col-md-6 text-center">
-            <h3 className="fw-600 text-dark-gray mb-3">Distribuidores SAAG Automotive</h3>
+            <h3 className="fw-600 text-dark-gray mb-3">Distribuidores BESTUNE Automotive</h3>
 
             <select
               className="form-select border-radius-10px fs-18"

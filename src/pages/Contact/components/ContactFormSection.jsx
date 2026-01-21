@@ -33,22 +33,7 @@ export default function ContactFormSection() {
               Forma parte de nuestra comunidad y mantente al día con nuestras novedades.
             </p>
 
-            {/* SAAG */}
-            <div className="elements-social social-text-style-01 mt-auto">
-              <p className="text-dark">SAAG AUTOMOTIVE</p>
-              <ul className="large-icon  fw-500">
-                <li>
-                  <a className="youtube" href="https://www.youtube.com/@SAAGMX" target="_blank">
-                    <i className="bi bi-youtube text-dark align-middle"></i>
-                  </a>
-                </li>
-                <li>
-                  <a className="linkedin" href="https://www.linkedin.com/in/saag-automotive-5895992aa/" target="_blank">
-                    <i className="bi bi-linkedin text-dark align-middle"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+       
 
             {/* BESTUNE + JIM */}
             <div className="row">
@@ -152,26 +137,9 @@ export default function ContactFormSection() {
                 >
                   <option value="">Seleccione un estado</option>
 
-                  <option value="Baja California Sur">Baja California Sur</option>
-                  <option value="Campeche">Campeche</option>
-                  <option value="Chihuahua">Chihuahua</option>
-                  <option value="Ciudad de México">Ciudad de México</option>
-                  <option value="Colima">Colima</option>
-                  <option value="Estado de México">Estado de México</option>
-                  <option value="Hidalgo">Hidalgo</option>
-                  <option value="Jalisco">Jalisco</option>
-                  <option value="Querétaro">Querétaro</option>
-                  <option value="Quintana Roo">Quintana Roo</option>
-                  <option value="Michoacán">Michoacán</option>
                   <option value="Nayarit">Nayarit</option>
-                  <option value="Nuevo León">Nuevo León</option>
-                  <option value="Oaxaca">Oaxaca</option>
-                  <option value="Puebla">Puebla</option>
-                  <option value="San Luis Potosí">San Luis Potosí</option>
-                  <option value="Sinaloa">Sinaloa</option>
-                  <option value="Tabasco">Tabasco</option>
-                  <option value="Veracruz">Veracruz</option>
-                  <option value="Yucatán">Yucatán</option>
+                  <option value="Puerto Vallarta">Puerto Vallarta</option>
+                  
 
                 </select>
               </div>
@@ -189,7 +157,7 @@ export default function ContactFormSection() {
                 </p>
 
                 <button type="submit" className="contact-btn text-dark fw-800">
-                  SEND MESSAGE
+                  Solicitar
                 </button>
               </div>
 

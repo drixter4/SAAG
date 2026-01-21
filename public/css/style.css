@@ -6906,6 +6906,7 @@ header.sticky.sticky-active .navbar-brand .default-logo {
   opacity: 0;
   width: 0;
 }
+
 header.sticky.sticky-active [data-header-hover=dark] {
   background-color: var(--dark-gray) !important;
 }

@@ -37,14 +37,14 @@ export default function Header() {
     <section className="section-dark p-0 bg-dark-gray">
       {banners.length > 0 ? (
         <Swiper
-          modules={[Pagination, Navigation, Autoplay]}
+          modules={[Autoplay]}
           slidesPerView={1}
           loop={true}
           speed={1000}
           autoplay={{ delay: 4000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
-          navigation={true}
-          className="banner-size"
+          className="banner-size "
+
         >
           {banners.map((banner) => (
             <SwiperSlide key={banner.id}>
@@ -60,7 +60,7 @@ export default function Header() {
                 }}
               >
               </div>
-               <div className="opacity-light bg-gradient-sherpa-blue-black"></div>
+              <div className="opacity-light bg-gradient-sherpa-blue-black"></div>
             </SwiperSlide>
           ))}
         </Swiper>

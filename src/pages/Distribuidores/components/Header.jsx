@@ -28,7 +28,7 @@ export default function Header() {
 
                       <span
                         className="opacity-7 fs-80 xs-fs-60 alt-font fw-700 text-shadow-extra-large ls-minus-2px mb-45px sm-mb-30px xs-mb-20px d-inline-block swiper-parallax-fancy-text"
-                        data-fancy-text='{"effect":"rotate","string":["Distribuidores SAAG"]}'
+                        data-fancy-text='{"effect":"rotate","string":["Distribuidores BESTUNE"]}'
                       ></span>
 
 

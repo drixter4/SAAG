@@ -12,19 +12,19 @@ export default function Navbar({ transparent = true }) {
               <img
                 src={
                   transparent
-                    ? "images/SAAG/SAAG-LOGO-blanco.png"
-                    : "images/SAAG/SAAG-LOGO-negro.webp"
+                    ? "images/SAAG/BESTUNE logo blanco.png"
+                    : "images/SAAG/BESTUNE-logo.png"
                 }
                 className="default-logo"
-                style={{ scale: 1.5 }}
+                style={{ scale: 2 }}
               />
               <img
-                src="images/SAAG/SAAG-LOGO-negro.webp"
+                src="images/SAAG/BESTUNE-logo.png"
                 className="alt-logo"
-                style={{ scale: 1.5 }}
+                style={{ scale: 1.5  }}
               />
               <img
-                src="images/SAAG/SAAG-LOGO-negro.webp"
+                src="images/SAAG/BESTUNE-logo.png"
                 className="mobile-logo"
               />
             </a>
