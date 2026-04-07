@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <section className="p-0 bg-dark-gray">
       <div
-        className="swiper lg-no-parallax media-screen md-h-600px sm-h-500px swiper-light-pagination ipad-top-space-margin "
+        className="swiper lg-no-parallax media-screen md-h-600px sm-h-500px xs-h-400px swiper-light-pagination ipad-top-space-margin "
         data-slider-options='{"slidesPerView":1,"loop":true,"parallax":true,"speed":1200,"autoplay":{"delay":4000,"disableOnInteraction":false},"pagination":{"el":".swiper-pagination-bullets","clickable":true},"navigation":{"nextEl":".slider-one-slide-next-1","prevEl":".slider-one-slide-prev-1"},"keyboard":{"enabled":true,"onlyInViewport":true},"effect":"slide"}'
       >
         <div className="swiper-wrapper">
@@ -10,7 +10,7 @@ export default function Header() {
           <div className="swiper-slide overflow-hidden">
             <div
               className="cover-background3 position-absolute top-0 start-0 w-100 h-100"
-              style={{ backgroundImage: "url('/images/SAAG/linea-800-header-SAAG.jpg')" }}
+              style={{ backgroundImage: "url('/images/SAAG/linea-800-header-SAAG.jpg')", backgroundPosition: "center center", backgroundSize: "cover" }}
               data-swiper-parallax="1000"
             >
               <div
@@ -22,7 +22,7 @@ export default function Header() {
               >
                 <div className="container h-100" data-swiper-parallax="-300">
                   <div className="row align-items-center justify-content-center h-100 text-center">
-                    <div className="col-xl-7 col-lg-9 col-md-10 position-relative text-white">
+                    <div className="col-xl-7 col-lg-9 col-md-10 mb-16 position-relative text-white">
 
 
 

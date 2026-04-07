@@ -19,7 +19,7 @@
 
     var menuBreakPoint = 991;
     var sliderBreakPoint = 991; // It will effect when you have used attribute "data-thumb-slider-md-direction" OR "data-slider-md-direction"
-    var animeBreakPoint = 1199;
+    var animeBreakPoint = 0;
     var headerTransition = 300;  // Header transition effect time
 
     /* ===================================
@@ -218,7 +218,7 @@
     // Close on outside area
     $(document).on('click', 'body', function (e) {
         // Close all menu
-        if (!($(e.target).closest('.navbar-nav').length || $(e.target).closest('.navbar-full-screen-menu-inner').length)) {
+        if (!($(e.target).closest('.navbar-nav').length || $(e.target).closest('.navbar-full-screen-menu-inner').length || $(e.target).closest('.navbar-toggler').length)) {
             setTimeout(function () {
                 $('.navbar-collapse.collapse').collapse('hide');
             }, 100);
